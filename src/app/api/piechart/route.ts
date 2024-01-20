@@ -26,7 +26,6 @@ export async function GET(request: NextRequest){
               }
             ]);
 
-        console.log(pieData)
 
         return NextResponse.json({
             pieData,

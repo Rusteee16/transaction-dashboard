@@ -36,7 +36,6 @@ export async function GET( request: NextRequest ) {
                 const doc = await Transaction.findOneAndUpdate( i, i, {
                     new: true, upsert: true
                   })
-                console.log( doc.id );
             } catch (error: any) {
                 console.log(error.message);
                 return NextResponse.json({error: error.message}, {status: 500})
