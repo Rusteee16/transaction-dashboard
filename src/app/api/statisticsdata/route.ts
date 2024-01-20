@@ -4,7 +4,7 @@ import Transaction from "@/models/TransactionModel";
 import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
-connect
+connect();
 
 export async function GET(request: NextRequest){
     try {
