@@ -24,7 +24,7 @@ export async function GET( request: NextRequest ) {
               id,
               title,
               description,
-              price: price.toString(),
+              price,
               category,
               image,
               sold,
