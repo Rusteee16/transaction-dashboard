@@ -30,6 +30,8 @@ export async function GET(request: NextRequest){
             }
         })
         totalAmount = Number(totalAmount.toFixed(2));
+        console.log(totalAmount);
+        
 
         return NextResponse.json({
             totalAmount,

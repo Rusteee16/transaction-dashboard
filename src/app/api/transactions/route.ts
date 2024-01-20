@@ -108,6 +108,8 @@ export async function GET(request: NextRequest){
                 ]
             })
         }
+        console.log(total, transactions);
+        
 
         return NextResponse.json({
             total,

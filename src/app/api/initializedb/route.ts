@@ -17,7 +17,7 @@ type item = {
 
 export async function GET( request: NextRequest ) {
     try {
-        const response = await fetch('https://s3.amazonaws.com/roxiler.com/product_transaction.json');
+        const response = await fetch(process.env.APIDATA_URL!);
         const apiData = await response.json();
 
         const items = apiData.map(({ id, title, price, description, category, image, sold, dateOfSale }: item) => ({
@@ -30,6 +30,9 @@ export async function GET( request: NextRequest ) {
               sold,
               dateOfSale: new Date(dateOfSale),
             }));
+
+        console.log(items);
+        
 
         items.forEach(async (i: item) => {
             try {

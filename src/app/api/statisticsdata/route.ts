@@ -20,6 +20,9 @@ export async function GET(request: NextRequest){
         const piechart = await axios.get(process.env.DOMAIN + `/api/piechart?month=${month}`);
         const pieData = piechart.data.pieData;
 
+        console.log(statData,barData,pieData);
+        
+
         return NextResponse.json({
             statData,
             barData,
