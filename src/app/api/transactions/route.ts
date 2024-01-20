@@ -10,7 +10,7 @@ export async function GET(request: NextRequest){
     try {
         const reqBody = await request;
         const page = parseInt(reqBody.nextUrl.searchParams.get("page") || "0");
-        const limit = 5;
+        const limit = 10;
         const search = reqBody.nextUrl.searchParams.get("search") || " ";
         const month = parseInt(reqBody.nextUrl.searchParams.get("month") || "3");
         

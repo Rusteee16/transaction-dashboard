@@ -57,10 +57,10 @@ const Dashboard = () => {
   } 
 
   function getNoOfPages(tra: number){
-    if (tra % 5 === 0){
-      setNoOfPages(Math.floor(tra/5));
+    if (tra % 10 === 0){
+      setNoOfPages(Math.floor(tra/10));
     } else {
-      setNoOfPages(Math.floor(tra/5)+1);
+      setNoOfPages(Math.floor(tra/10)+1);
     }
   }
 
