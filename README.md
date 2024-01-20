@@ -93,7 +93,7 @@ Create a .env file in the root of the project.
 Add the following variables:
 
 ```bash
-MONGODB_URL = your_mongodb_url
+MONGODB_URI = your_mongodb_url
 APIDATA_URL = https://s3.amazonaws.com/roxiler.com/product_transaction.json
 DOMAIN = http://localhost:3000 
 ```
